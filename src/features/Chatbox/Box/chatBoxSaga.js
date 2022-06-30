@@ -47,8 +47,8 @@ const patchMember = async ({chatboxId, memberIds}) => {
 }
 
 function* handleChatBox (action) {
-    // const channel = yield call(countdown, 10)
-    // yield takeEvery(channel, function* () {
+    const channel = yield call(countdown, 10)
+    yield takeEvery(channel, function* () {
         const { id } = action.payload
         try {
             const chatBox = yield call(fetchApiChatBox, id)
@@ -58,7 +58,7 @@ function* handleChatBox (action) {
         } catch (err) {
             yield put(getChatBoxErr(err))
         }
-    // })
+    })
 }
 
 function* handleSendMessenger (action) {
