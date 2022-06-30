@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ChatBox/static/css/main.20d4f887.css",
+    "main.js": "/ChatBox/static/js/main.54169a9e.js",
+    "static/js/787.2b8a1820.chunk.js": "/ChatBox/static/js/787.2b8a1820.chunk.js",
+    "static/media/AuthIMG.jpg": "/ChatBox/static/media/AuthIMG.9ed96457c21dda01329c.jpg",
+    "static/media/AuthIMG1.jpg": "/ChatBox/static/media/AuthIMG1.f504cf7731510c740006.jpg",
+    "static/media/IMG2.jpg": "/ChatBox/static/media/IMG2.d77c32e01b30bfea953b.jpg",
+    "static/media/IMG1.jpg": "/ChatBox/static/media/IMG1.bbd77b64152e46dcbeb3.jpg",
+    "static/media/IMG3.jpg": "/ChatBox/static/media/IMG3.f4d5be723136ebe960e7.jpg",
+    "static/media/Profile2.jpg": "/ChatBox/static/media/Profile2.72b37e321be794da0794.jpg",
+    "static/media/BGChatBox.jpg": "/ChatBox/static/media/BGChatBox.b6a90d82fe8872029e53.jpg",
+    "index.html": "/ChatBox/index.html",
+    "main.20d4f887.css.map": "/ChatBox/static/css/main.20d4f887.css.map",
+    "main.54169a9e.js.map": "/ChatBox/static/js/main.54169a9e.js.map",
+    "787.2b8a1820.chunk.js.map": "/ChatBox/static/js/787.2b8a1820.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20d4f887.css",
+    "static/js/main.54169a9e.js"
+  ]
+}
