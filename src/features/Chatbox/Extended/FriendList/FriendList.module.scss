@@ -1,0 +1,23 @@
+.wrapFriends {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.wrap {
+    cursor: pointer;
+    user-select: none;
+}
+
+.wrap:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.btn {
+    background-color: transparent;
+    color: #333;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+}

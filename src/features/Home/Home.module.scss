@@ -1,0 +1,52 @@
+.wrapbarslide {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.activeSlideLeft::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    animation: bartoright 1.7s ease-in-out forwards;
+    z-index: 1;
+}
+
+.activeSlideRight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    animation: bartoleft 1.7s ease-in-out forwards;
+    z-index: 1;
+}
+
+@keyframes bartoleft {
+    from {
+        transform: translateX(0);
+    }
+    to {    
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes bartoright{
+    from {
+        transform: translateX(0);
+    }
+    to {    
+        transform: translateX(100%);
+    }
+}

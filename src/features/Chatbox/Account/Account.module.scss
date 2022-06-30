@@ -1,0 +1,104 @@
+.wrapper {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    letter-spacing: 0.2rem;
+    background-color: #fff;
+    transform: translateX(10rem);
+    transition: all ease-in-out 0.5s;
+}
+
+.wrapperVisible {
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(0);
+}
+
+.btn {
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+.avatar {
+    width: 9.2rem;
+    height: 9.2rem
+}
+
+.wrapAvatar {
+    border: solid 0.5rem rgba($color: #fe7610, $alpha: 0.6);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapAvatar:hover {
+    border: solid 0.5rem rgba($color: #fe7610, $alpha: 1);
+    transform: scale(1.25);
+}
+
+.wrapAvatar:hover .cameraBtn {
+    opacity: 0.8;
+}
+
+.cameraBtn {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    right: 50%;
+    background-color: #fff;
+    color: var(--secondary-color);
+    transform: translate(50%, -50%);
+    transition: all ease-in-out 0.3s;
+}
+
+.cameraBtn:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+.bgWrapper {
+    background-image: url(../../../app/images/Profile2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapList {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: scale(0.95);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.wrapList:hover {
+    background-color: var(--primary-color);
+    color: #333;
+    transform: scale(1);
+}
+
+.input {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.input:hover {
+    transform: scale(1.25);
+}

@@ -1,0 +1,58 @@
+.messengerLine {
+    border-radius: 1.8rem;
+    letter-spacing: 0.08rem;
+    background-color: rgb(225, 225, 225);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.messengerUser {
+    background-color: var(--secondary-color);   
+}
+
+.avatar {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.extendBtn {
+    background-color: transparent;
+    color: rgb(225, 225, 225);
+}
+
+.extendBtn:hover {
+    background-color: transparent;
+    color: var(--secondary-color)
+}
+
+.dropdownContent {
+    opacity: 0;
+    z-index: -1;
+    width: 10rem;
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+    transform: translateY(1rem);
+    height: 5.8rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.dropdownUser {
+    top: -2.5rem;
+    right: 3.7rem;
+}
+
+.dropdownOther {
+    top: -2.5rem;
+    left: 3.7rem;
+}
+
+.dropdownBtn {
+    background-color: transparent;
+    color: #333;
+}
+
+.dropdownVisible {
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+}

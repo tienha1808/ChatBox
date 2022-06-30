@@ -1,0 +1,69 @@
+.formInput {
+    position: relative;
+    z-index: 1;
+    padding: 0.7rem 4.3rem 0.5rem 1.2rem;
+    border: solid 0.2rem #fff;
+    border-radius: 5px;
+    background-color: rgba($color: #fff, $alpha: 0.15);
+    color: #333;
+    transform-origin: 0 0;
+    transition: all 0.3s;
+}
+
+.formLabel {
+    color: rgba($color: #333, $alpha: 0.7);
+    transform: translate(1rem, -130%);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+.formInput::placeholder {
+    color: transparent;
+}
+
+.formInput:focus {
+    border: solid 0.1rem var(--secondary-color);
+    transform: scaleY(1.05) translateY(-2.5%);
+}
+
+
+.formInput:not(:placeholder-shown) + .formLabel {
+    transform: translate(1.5rem, -270%) scale(1);
+    font-weight: 500;
+}
+
+.formInput:focus + .formLabel {
+    transform: translate(0.8rem, -260%) scale(0.9);
+    color: var(--secondary-color);
+}
+
+.formInput:focus ~ div {
+    right: 10rem
+}
+
+.formBtn {
+    position: absolute;
+    height: 3.3rem;
+    z-index: 10;
+    border-radius: 5px;
+    right: 5px;
+    top: 4.4px;
+}
+
+.formTextError {
+    opacity: 0;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 10;
+    right: 5px;
+    top: -3.5rem;
+    transform: translateY(0.7rem);
+    transform-origin: 0 0;
+    transition: all linear 0.3s;
+}
+
+.formBtn:hover + .formTextError {
+    opacity: 1;
+    transform: translate(0);
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import 'normalize.css';
+
+:root {
+    --primary-color: #fbede8;
+    --secondary-color: #fe7610;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.15;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba($color: #fff, $alpha: 0.9);
+    color: var(--secondary-color);
+    transition: ease 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+input {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: ease 0.3s;
+}
+
+a:hover {
+    color: var(--primary-color)
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 0.5rem;
+}
